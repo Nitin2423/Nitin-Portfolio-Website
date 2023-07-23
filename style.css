@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Fira+Sans:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.topnav {
+    background-color: #f6f6f6;
+    width: 100vw;
+    height: 51px;
+    /* height: auto; */
+    display: flex;
+    color: #065986;
+    font-family: 'Abel', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.topnav img {
+    height: 40px;
+    padding: 10px;
+    /* position: sticky;
+    top: 0; */
+}
+
+.navitem {
+    display: flex;
+    align-items: center;
+    padding: 5vh 5vw 5vh 5vw;
+    /* /* position: sticky; */
+}
+
+.navitem li {
+    list-style: none;
+    padding: 0px 30px 0px 5px;
+}
+
+.navitem a {
+    text-decoration: none;
+    color: #065986;
+}
+
+.navitem a:hover {
+    text-decoration: none;
+    color: #7cc5ec;
+}
+
+.container {
+    /* background-color: yellow; */
+    width: 100vw;
+    /* height: 85vh; */
+    position: absolute;
+
+}
+
+.ham {
+    display: none;
+    position: absolute;
+    height: 35px;
+    cursor: pointer;
+    right: 2%;
+    top: 5px;
+    background-color: #f6f6f6;
+}
+
+.infocontainer {
+    /* background-color: red; */
+    height: 70vh;
+    width: 85vw;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hi {
+    font-size: 45px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+}
+
+.name {
+    font-size: 40px;
+    font-family: 'Abel', sans-serif;
+    font-weight: 900;
+}
+
+.about {
+    font-size: 35px;
+    padding-top: 5px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.btn {
+    background-color: #00b8e9;
+    /* color: black; */
+    padding: 5px;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 11px 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f6f6f6;
+    color: #00b8e9;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mypic {
+    padding: 86px 15px;
+    padding-bottom: 10px;
+}
+
+.mypic img {
+    height: 30vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 20px;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.divinput {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 5px;
+    margin: 20px;
+    height: 10vh;
+}
+.input{
+    height: 4vh;
+}
+.contactform {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    font-size: larger;
+    padding: 8px 20px
+}
+
+.skill {
+    border: 1px solid black;
+    width: 170px;
+    height: 173px;
+}
+
+.myskills {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bolder;
+    padding: 8px;
+}
+
+.skillh {
+    background-color: #07b8e8;
+    width: 140px;
+    height: 4px;
+    margin-left: 9px;
+    border-radius: 10px;
+}
+
+.skillc {
+    background-color: #07b8e8;
+    width: 100px;
+    height: 4px;
+    margin-left: 9px;
+    border-radius: 10px;
+
+}
+
+.skilljs {
+    background-color: #07b8e8;
+    width: 20px;
+    height: 4px;
+    margin-left: 9px;
+    border-radius: 10px;
+}
+
+.skillj {
+    background-color: #07b8e8;
+    width: 50px;
+    height: 4px;
+    margin-left: 9px;
+    border-radius: 10px;
+
+}
+
+@media (max-width:737px) {
+    .topnav {
+        flex-direction: column;
+        
+        /* background-size:; */
+    }
+
+    .h-nav {
+        height: 48px;
+
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+    .topnav img {
+        padding: 07px;
+        /* margin-top: -14px; */
+        height: 37px;
+        /* position: fixed; */
+        display: inline;
+    }
+
+    .navitem {
+        flex-direction: column;
+        padding: 2vh 1vw;
+        background-color: #f6f6f6;
+        border-radius: 8px;
+        width: 100vw;
+        /* transition: all 1s ease-out; */
+    }
+
+    .navitem a:hover {
+        text-decoration: none;
+        color: #7cc5ec;
+    }
+
+    .navitem li {
+        padding: 17px 0px 0px 0px;
+    }
+
+    .ham {
+        display: block;
+    }
+
+
+}
+
+@media (max-width:667px) {
+    .mypic img {
+        display: none;
+    }
+}
